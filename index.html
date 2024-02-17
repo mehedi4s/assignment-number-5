@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Assignment 5</title>
+    <!-- daisy Ui and Tailwind -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header class="container mx-auto mt-6">
+        <!-- navber -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-4xl font-extrabold">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-lg font-semibold">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn text-xl font-bold text-green-500">Bus <img src="images/bus-icon.png" alt=""></a>
+                </div>
+              </div>
+        </nav>
+        <!-- banner -->
+        <div class="bg-[url(images/banner.png)] bg-no-repeat w-full bg-cover h-full mt-10">
+           <div class="text-center text-white pb-64 pt-28">
+            <h1 class="text-6xl font-bold font-raleway leading-[86px]">End-to-End Travel with  <br>
+                <span class="text-[#1DD100]">P Paribahan </span>
+            </h1>
+            <p class="font-inter leading-9">Envisioning a comfortable ride with scenic views, anticipating a smooth travel <br> experience. Requesting a window seat to capture the passing landscapes.</p>
+            <button class="btn my-8 bg-[#1DD100] font-raleway text-xl font-bold border-none px-8">Buy Tickets</button>
+           </div>
+
+        </div>
+    </header>
+    <main class="mt-28">
+        <!-- best offer section -->
+        <section class="container mx-auto mb-32">
+            <h1 class="font-raleway text-center text-4xl font-bold">Best offers for you</h1>
+            <div class="flex gap-6 mt-12">
+                <!-- 15% -->
+                <div class="bg-[#FFBF0F] relative flex justify-between flex-1 rounded-2xl">
+                    <img class="absolute left-1/2 h-full" src="images/cupon-devider.png" alt="">
+                   <div class="font-inter py-12 pl-12 leading-9"> 
+                        <h1 class="text-4xl font-black">15% OFF</h1>
+                        <p class="text-xl font-semibold">on your next purchase</p>
+                        <p>use by January 2024</p>
+                    </div>
+                    <div class="py-12 pr-12 font-raleway">
+                        <h1 class="text-3xl font-bold">NEW15</h1>
+                        <p class="text-xl font-medium">Coupon Code</p>
+                    </div>
+                </div>
+                <!-- 20% -->
+                <div class="bg-[#FFBF0F] relative flex justify-between flex-1 rounded-2xl">
+                    <img class="absolute left-1/2 h-full" src="images/cupon-devider.png" alt="">
+                   <div class="font-inter py-12 pl-12 leading-9"> 
+                        <h1 class="text-4xl font-black">20% OFF</h1>
+                        <p class="text-xl font-semibold">on your next purchase</p>
+                        <p>use by January 2024</p>
+                    </div>
+                    <div class="py-12 pr-12 font-raleway">
+                        <h1 class="text-3xl font-bold">Couple 20</h1>
+                        <p class="text-xl font-medium">Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-outline mt-16 text-[#1DD100] px-8">See All Offers</button>
+            </div>
+        </section>
+        <!-- main section -->
+        <section class="bg-[#F7F8F8] border-t-2 rounded-tl-[88px] rounded-tr-[88px] border-green-500">
+            <div class="container mx-auto pb-10">
+                <div class="text-center pt-28 mb-12">
+                    <h1 class="font-raleway text-4xl font-bold mb-6">P.H Paribahan</h1>
+                    <p>The bus ticket, a slender slip of paper, holds within its modest dimensions a world of possibilities. It represents not just a mere <br> transaction, but the promise of adventure, connection, and journey. </p>
+                </div>
+                <!-- Greenline Paribahan -->
+                <div class="bg-white rounded-3xl mb-24 flex justify-between">
+                    <!-- form -->
+                    <div class="w-[65%]">
+                        <div class="flex justify-between">
+                            <div>
+                                <div class="flex gap-4">
+                                    <img src="images/bus-logo.png" alt="">
+                                    <div>
+                                        <h1>Greenline Paribahan</h1>
+                                        <p>Coach-009-WEB ! AC_Business</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="btn"> <img src="images/seat-gray.png" alt=""><span>40</span> Seats left</button>
+                            </div>
+                        </div>
+                        <!-- route number section -->
+                        <div class="bg-[#F7F8F8]">
+                            <div class="p-8">
+                                <div>
+                                    <h4>Route</h4>
+                                    <h4>Dhaka - Sylhet</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ticket price -->
+                    <div class="py-32 pr-16">
+                        <div>
+                            <img src="images/fare.png" alt="">
+                            <h1>550 Taka</h1>
+                            <p> Per Seat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
