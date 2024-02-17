@@ -10,7 +10,7 @@
     <!-- custom css -->
     <link rel="stylesheet" href="style/style.css">
 </head>
-<body>
+<body class="font-inter">
     <header class="container mx-auto mt-6">
         <!-- navber -->
         <nav>
@@ -98,29 +98,43 @@
                     <p>The bus ticket, a slender slip of paper, holds within its modest dimensions a world of possibilities. It represents not just a mere <br> transaction, but the promise of adventure, connection, and journey. </p>
                 </div>
                 <!-- Greenline Paribahan -->
-                <div class="bg-white rounded-3xl mb-24 flex justify-between">
+                <div class="bg-white relative rounded-3xl mb-24 flex justify-between">
                     <!-- form -->
-                    <div class="w-[65%]">
+                    <img class="absolute left-3/4 h-full" src="images/info-devider.png" alt="">
+                    <div class="w-[65%] m-8">
                         <div class="flex justify-between">
                             <div>
                                 <div class="flex gap-4">
                                     <img src="images/bus-logo.png" alt="">
                                     <div>
-                                        <h1>Greenline Paribahan</h1>
+                                        <h1 class="font-raleway font-bold text-3xl">Greenline Paribahan</h1>
                                         <p>Coach-009-WEB ! AC_Business</p>
                                     </div>
                                 </div>
                             </div>
                             <div>
-                                <button class="btn"> <img src="images/seat-gray.png" alt=""><span>40</span> Seats left</button>
+                                <button class="btn bg-[#1DD10026] text-[#1DD100]"> <img src="images/seat-gray.png" alt=""><span>40</span> Seats left</button>
                             </div>
                         </div>
                         <!-- route number section -->
-                        <div class="bg-[#F7F8F8]">
+                        <div class="bg-[#F7F8F8] rounded-3xl mt-10">
                             <div class="p-8">
                                 <div>
-                                    <h4>Route</h4>
-                                    <h4>Dhaka - Sylhet</h4>
+                                    <div class="flex justify-between">
+                                        <h4>Route</h4>
+                                        <h4 class="font-raleway font-semibold">Dhaka - Sylhet</h4>
+                                    </div>
+                                    <hr style="border: 1px dashed; opacity: 30%;" class="my-4">
+                                </div>
+                                <div class="flex justify-between">
+                                    <h4>Departure Time</h4>
+                                    <h4 class="font-raleway font-semibold">9:00 PM</h4>
+                                </div>
+                                <hr style="border: 1px dashed; opacity: 30%;" class="my-4">
+                                <div class="flex justify-evenly gap-6">
+                                    <button class="btn flex-1">Boarding Point - Laxmipur</button>
+                                    <button class="btn flex-1">Dropping Point - Bogura</button>
+                                    <button class="btn flex-1">Est. Time - 11 Hour</button>
                                 </div>
                             </div>
                         </div>
@@ -129,12 +143,13 @@
                     <div class="py-32 pr-16">
                         <div>
                             <img src="images/fare.png" alt="">
-                            <h1>550 Taka</h1>
+                            <h1 class="font-raleway font-bold text-3xl">550 Taka</h1>
                             <p> Per Seat</p>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- ticketing interface -->
         </section>
     </main>
     <footer>
