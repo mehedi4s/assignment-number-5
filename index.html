@@ -321,18 +321,30 @@
                         <h1 class="text-2xl font-semibold">Select Your Seat</h1>
                         <hr style="border: 1px dashed; opacity: 30%;" class="my-4">
                         <div class="bg-[#F7F8F8] rounded-xl mt-10 p-8">
-                            <div class="flex justify-between font-bold">
-                                <p>Seat <span id="seat-select" class="bg-[#1DD100] text-white rounded-full">0</span> </p>
-                                <p>Class</p>
-                                <p>Price</p>
-                            </div>
-                            <hr style="border: 1px dashed; opacity: 30%;" class="my-4">
+                            <!-- table -->
+                            <div class="overflow-x-auto">
+                                <table class="table">
+                                  <!-- head -->
+                                  <thead>
+                                    <tr>
+                                      <th class="text-black">Seat <span id="seat-select" class="bg-[#1DD100] text-white rounded-full">0</span></th>
+                                      <th class="text-black">Class</th>
+                                      <th class="text-black">Price</th>
+                                    </tr>
+                                  </thead>
+                                  
+                                  <tbody id="seat-class-price">
+                                    <!-- row 1 -->
+                                    <tr>
+                                        <td colspan="3"><hr style="border: 1px dashed; opacity: 30%;" class="my-4"></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            
                             <!-- seat class price bosbe -->
-                            <div class="flex justify-between ">
-                                <!-- <p>Seat</p>
-                                <p>Class</p>
-                                <p>Price</p> -->
-                            </div>
+                           
+                            
                             <hr style="border: 1px solid; opacity: 30%;" class="my-4">
                             <div class="flex justify-between font-bold">
                                 <p>Total Price</p>
