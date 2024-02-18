@@ -1,6 +1,6 @@
  
  const allBtn = document.getElementsByClassName('seat');
-
+    const arraySeat = [];
  for (const btn of allBtn) {
     // console.log(btn);
     btn.addEventListener('click', function(e){
@@ -8,6 +8,8 @@
         // console.log(btn.innerText)
         const btnId = btn.innerText;
         setBackgroundColorById(btnId);
+        arraySeat.push(btnId);
+        console.log(arraySeat);
 
         // seats left
         const currentSeats = getTextElementValue('seats-left');
