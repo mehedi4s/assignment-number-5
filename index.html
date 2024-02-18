@@ -367,13 +367,13 @@
                               <label class="label">
                                 <span class="label-text text-xl font-bold">Passenger Name*</span>
                               </label>
-                              <input type="text" placeholder="Enter your name" class="input input-bordered py-7" required />
+                              <input type="text" placeholder="Enter your name" class="input input-bordered py-7"  />
                             </div>
                             <div class="form-control">
                               <label class="label">
                                 <span class="label-text text-xl font-bold">Phone Number*</span>
                               </label>
-                              <input type="tel" placeholder="Enter your phone number" class="input input-bordered py-7" required />
+                              <input type="tel" placeholder="Enter your phone number" class="input input-bordered py-7" />
                               <label class="label">
                                 <span class="label-text text-xl font-bold">Email ID</span>
                               </label>
@@ -381,7 +381,24 @@
                              
                             </div>
                             <div class="form-control mt-6">
-                              <button class="btn bg-[#1DD100] text-xl font-extrabold text-white">Next</button>
+                                <!-- modal add -->
+                                <button class="btn bg-[#1DD100] text-xl font-extrabold text-white" onclick="my_modal_5.showModal()">Next</button>
+                                <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                                <div class="modal-box bg-[#F7F8F8]">
+                                    <div class="flex flex-col gap-4 bg-white m-14 p-5 rounded-2xl justify-center items-center">
+                                        <img class="h-1/2 w-1/2" src="images/success.png" alt="">
+                                        <h1 class="text-2xl font-bold text-[#27AE60]">SUCCESS</h1>
+                                        <P>Thank you for Booking Our Bus Seats. 
+                                            We are working hard to find the best service and deals for you. 
+                                            Shortly you will find a confirmation in your email.</P>
+                                            <form method="dialog">
+                                        
+                                                <button onclick="modalCloseBtn()" class="btn w-1/2 bg-[#27AE60] text-white font-bold">Continue</button>
+                                            </form>
+                                    </div>
+                                </div>
+                                </dialog>
+                              <!-- modal end -->
                             </div>
                             <div class="flex justify-around mt-8">
                                 <label class="label">

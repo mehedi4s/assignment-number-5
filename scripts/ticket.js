@@ -87,3 +87,9 @@ for (const btn of allBtn) {
     }
   });
 }
+
+// modal close btn
+
+function modalCloseBtn(){
+    document.getElementById('my_modal_5').classList.add('hidden');
+}
