@@ -6,11 +6,13 @@
     btn.addEventListener('click', function(e){
 
         const selectSeatNumber = getTextElementValue('seat-select');
-        console.log(selectSeatNumber);
+        
 
         if(selectSeatNumber >= 4){
             return alert();
         }
+
+
         const btnId = btn.innerText;
         setBackgroundColorById(btnId);
         
@@ -34,21 +36,25 @@
 
         seatClassPrice.append(tr);
 
+        // total cost
+        const perTicketPrice = getTextElementValue('ticket-price');
+        const totalCostPrice = getTextElementValue('total-cost');
+        
+        const total = totalCostPrice + perTicketPrice;
+        
+        setTextElementValue('total-cost', total);
+
          // seats left
          const currentSeats = getTextElementValue('seats-left');
-         // console.log(currentSeats);
+        
          const updateSeats = currentSeats - 1;
-        //  console.log(updateSeats);
+        
          setTextElementValue('seats-left', updateSeats);
  
          // seat select
          const currentSelect = getTextElementValue('seat-select');
          const updateSelect = currentSelect + 1;
          setTextElementValue('seat-select', updateSelect);
-
-        // array check
-        
-              
 
        
 
