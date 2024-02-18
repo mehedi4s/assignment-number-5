@@ -49,7 +49,7 @@
                 <span class="text-[#1DD100]">P Paribahan </span>
             </h1>
             <p class="font-inter leading-9">Envisioning a comfortable ride with scenic views, anticipating a smooth travel <br> experience. Requesting a window seat to capture the passing landscapes.</p>
-            <button class="btn my-8 bg-[#1DD100] font-raleway text-xl font-bold border-none px-8">Buy Tickets</button>
+            <button  class="btn my-8 bg-[#1DD100] font-raleway text-xl font-bold border-none px-8"><a href="#main">Buy Tickets</a></button>
            </div>
 
         </div>
@@ -91,7 +91,7 @@
             </div>
         </section>
         <!-- main section -->
-        <section class="bg-[#F7F8F8] border-t-2 pb-10 rounded-tl-[88px] rounded-tr-[88px] border-green-500">
+        <section id="main" class="bg-[#F7F8F8] border-t-2 pb-10 rounded-tl-[88px] rounded-tr-[88px] border-green-500">
             <div class="container mx-auto pb-3">
                 <div class="text-center pt-28 mb-12">
                     <h1 class="font-raleway text-4xl font-bold mb-6">P.H Paribahan</h1>
@@ -113,7 +113,7 @@
                                 </div>
                             </div>
                             <div>
-                                <button class="btn bg-[#1DD10026] text-[#1DD100]"> <img src="images/seat-gray.png" alt=""><span>40</span> Seats left</button>
+                                <button class="btn bg-[#1DD10026] text-[#1DD100]"> <img src="images/seat-gray.png" alt=""><span id="seats-left">40</span> Seats left</button>
                             </div>
                         </div>
                         <!-- route number section -->
@@ -171,18 +171,18 @@
                         <div class="relative mt-8 mb-24">
                             <button class="btn absolute right-0"><img src="images/Vector.png" alt=""></button>
                         </div>
-                        <div>
+                        <div onclick="">
                             <div class="flex items-center gap-28 my-6">
                                 <!-- A block -->
                                 <span >A</span>
                                 <div class="flex items-center justify-between w-[90%]">
                                     <div class="space-x-14">
-                                        <button class="btn w-[100px]">A1</button>
-                                        <button class="btn w-[100px]">A2</button>
+                                        <button id="A1" class="btn seat w-[100px]">A1</button>
+                                        <button id="A2" class="btn seat w-[100px]">A2</button>
                                     </div>
                                     <div class="space-x-10">
-                                        <button class="btn w-[100px]">A3</button>
-                                        <button class="btn w-[100px]">A4</button>
+                                        <button id="A3" class="btn seat w-[100px]">A3</button>
+                                        <button id="A4" class="btn seat w-[100px]">A4</button>
                                     </div>
                                 </div>
                             </div>
@@ -191,12 +191,12 @@
                                 <span >B</span>
                                 <div class="flex items-center justify-between w-[90%]">
                                     <div class="space-x-14">
-                                        <button class="btn w-[100px]">B1</button>
-                                        <button class="btn w-[100px]">B2</button>
-                                    </div>
+                                        <button id="B1" class="btn seat w-[100px]">B1</button>
+                                        <button id="B2" class="btn seat w-[100px]">B2</button>
+                                  </div>
                                     <div class="space-x-10">
-                                        <button class="btn w-[100px]">B3</button>
-                                        <button class="btn w-[100px]">B4</button>
+                                        <button id="B3" class="btn seat w-[100px]">B3</button>
+                                        <button id="B4" class="btn seat w-[100px]">B4</button>
                                     </div>
                                 </div>
                             </div>
@@ -205,12 +205,12 @@
                                 <span >C</span>
                                 <div class="flex items-center justify-between w-[90%]">
                                     <div class="space-x-14">
-                                        <button class="btn w-[100px]">C1</button>
-                                        <button class="btn w-[100px]">C2</button>
+                                        <button id="C1" class="btn seat w-[100px]">C1</button>
+                                        <button id="C2" class="btn seat w-[100px]">C2</button>
                                     </div>
                                     <div class="space-x-10">
-                                        <button class="btn w-[100px]">C3</button>
-                                        <button class="btn w-[100px]">C4</button>
+                                        <button id="C3" class="btn seat w-[100px]">C3</button>
+                                        <button id="C4" class="btn seat w-[100px]">C4</button>
                                     </div>
                                 </div>
                             </div>
@@ -219,12 +219,12 @@
                                 <span >D</span>
                                 <div class="flex items-center justify-between w-[90%]">
                                     <div class="space-x-14">
-                                        <button class="btn w-[100px]">D1</button>
-                                        <button class="btn w-[100px]">D2</button>
+                                        <button id="D1" class="btn seat w-[100px]">D1</button>
+                                        <button id="D2" class="btn seat w-[100px]">D2</button>
                                     </div>
                                     <div class="space-x-10">
-                                        <button class="btn w-[100px]">D3</button>
-                                        <button class="btn w-[100px]">D4</button>
+                                        <button id="D3" class="btn seat w-[100px]">D3</button>
+                                        <button id="D4" class="btn seat w-[100px]">D4</button>
                                     </div>
                                 </div>
                             </div>
@@ -233,12 +233,12 @@
                                 <span >E</span>
                                 <div class="flex items-center justify-between w-[90%]">
                                     <div class="space-x-14">
-                                        <button class="btn w-[100px]">E1</button>
-                                        <button class="btn w-[100px]">E2</button>
+                                        <button id="E1" class="btn seat w-[100px]">E1</button>
+                                        <button id="E2" class="btn seat w-[100px]">E2</button>
                                     </div>
                                     <div class="space-x-10">
-                                        <button class="btn w-[100px]">E3</button>
-                                        <button class="btn w-[100px]">E4</button>
+                                        <button id="E3" class="btn seat w-[100px]">E3</button>
+                                        <button id="E4" class="btn seat w-[100px]">E4</button>
                                     </div>
                                 </div>
                             </div>
@@ -247,12 +247,12 @@
                                 <span >F</span>
                                 <div class="flex items-center justify-between w-[90%]">
                                     <div class="space-x-14">
-                                        <button class="btn w-[100px]">F1</button>
-                                        <button class="btn w-[100px]">F2</button>
+                                        <button id="F1" class="btn seat w-[100px]">F1</button>
+                                        <button id="F2" class="btn seat w-[100px]">F2</button>
                                     </div>
                                     <div class="space-x-10">
-                                        <button class="btn w-[100px]">F3</button>
-                                        <button class="btn w-[100px]">F4</button>
+                                        <button id="F3" class="btn seat w-[100px]">F3</button>
+                                        <button id="F4" class="btn seat w-[100px]">F4</button>
                                     </div>
                                 </div>
                             </div>
@@ -261,12 +261,12 @@
                                 <span >G</span>
                                 <div class="flex items-center justify-between w-[90%]">
                                     <div class="space-x-14">
-                                        <button class="btn w-[100px]">G1</button>
-                                        <button class="btn w-[100px]">G2</button>
+                                        <button id="G1" class="btn seat w-[100px]">G1</button>
+                                        <button id="G2" class="btn seat w-[100px]">G2</button>
                                     </div>
                                     <div class="space-x-10">
-                                        <button class="btn w-[100px]">G3</button>
-                                        <button class="btn w-[100px]">G4</button>
+                                        <button id="G3" class="btn seat w-[100px]">G3</button>
+                                        <button id="G4" class="btn seat w-[100px]">G4</button>
                                     </div>
                                 </div>
                             </div>
@@ -275,12 +275,12 @@
                                 <span>H</span>
                                 <div class="flex items-center justify-between w-[90%]">
                                     <div class="space-x-14">
-                                        <button class="btn w-[100px]">H1</button>
-                                        <button class="btn w-[100px]">H2</button>
+                                        <button id="H1" class="btn seat w-[100px]">H1</button>
+                                        <button id="H2" class="btn seat w-[100px]">H2</button>
                                     </div>
                                     <div class="space-x-10">
-                                        <button class="btn w-[100px]">H3</button>
-                                        <button class="btn w-[100px]">H4</button>
+                                        <button id="H3" class="btn seat w-[100px]">H3</button>
+                                        <button id="H4" class="btn seat w-[100px]">H4</button>
                                     </div>
                                 </div>
                             </div>
@@ -289,12 +289,12 @@
                                 <span >I</span>
                                 <div class="flex items-center justify-between w-[90%]">
                                     <div class="space-x-14">
-                                        <button class="btn w-[100px]">I1</button>
-                                        <button class="btn w-[100px]">I2</button>
+                                        <button id="I1" class="btn seat w-[100px]">I1</button>
+                                        <button id="I2" class="btn seat w-[100px]">I2</button>
                                     </div>
                                     <div class="space-x-10">
-                                        <button class="btn w-[100px]">I3</button>
-                                        <button class="btn w-[100px]">I4</button>
+                                        <button id="I3" class="btn seat w-[100px]">I3</button>
+                                        <button id="I4" class="btn seat w-[100px]">I4</button>
                                     </div>
                                 </div>
                             </div>
@@ -303,12 +303,12 @@
                                 <span >J</span>
                                 <div class="flex items-center justify-between w-[90%]">
                                     <div class="space-x-14">
-                                        <button class="btn w-[100px]">J1</button>
-                                        <button class="btn w-[100px]">J2</button>
+                                        <button id="J1" class="btn seat w-[100px]">J1</button>
+                                        <button id="J2" class="btn seat w-[100px]">J2</button>
                                     </div>
                                     <div class="space-x-10">
-                                        <button class="btn w-[100px]">J3</button>
-                                        <button class="btn w-[100px]">J4</button>
+                                        <button id="J3" class="btn seat w-[100px]">J3</button>
+                                        <button id="J4" class="btn seat w-[100px]">J4</button>
                                     </div>
                                 </div>
                             </div>
@@ -322,7 +322,7 @@
                         <hr style="border: 1px dashed; opacity: 30%;" class="my-4">
                         <div class="bg-[#F7F8F8] rounded-xl mt-10 p-8">
                             <div class="flex justify-between font-bold">
-                                <p>Seat<span class="bg-[#1DD100] text-white">0</span> </p>
+                                <p>Seat <span id="seat-select" class="bg-[#1DD100] text-white rounded-full">0</span> </p>
                                 <p>Class</p>
                                 <p>Price</p>
                             </div>
@@ -391,5 +391,7 @@
     <footer>
 
     </footer>
+    <script src="scripts/utility.js"></script>
+    <script src="scripts/ticket.js"></script>
 </body>
 </html>
