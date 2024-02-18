@@ -6,7 +6,7 @@ for (const btn of allBtn) {
     const selectSeatNumber = getTextElementValue("seat-select");
 
     if (selectSeatNumber > 3) {
-      return alert();
+      return alert("tou can select max 4 seats");
     }
 
     // coupon
