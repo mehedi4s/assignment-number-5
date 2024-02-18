@@ -16,3 +16,7 @@ function setTextElementValue(elementId, value){
     const element = document.getElementById(elementId);
     element.innerText = value;
 }
+
+function getInputText(){
+    
+}
